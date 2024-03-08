@@ -290,3 +290,105 @@
     height: 100%;
     width: 60%;
 }
+
+/* Styles Info page */
+/* Estilos generales para la pestaña de información */
+.main-info-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.info-title {
+    color: #4A7C59; /* Oscurece para mayor contraste */
+    margin: 20px 0;
+}
+
+.info-text, .faq-section p, .contact-form p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Acordeón FAQ */
+.faq-section {
+    width: 60rem; /* Ajusta según necesites */
+}
+
+/* Acordeón FAQ */
+.faq-section details {
+    width: 50rem; /* Ajusta según necesites */
+    margin: 10px auto; /* Centrado horizontal */
+    border: 1px solid #92C9AB;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+
+.faq-section summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Galería de imágenes */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre imágenes */
+    margin-top: 20px;
+}
+
+.image-gallery {
+    max-width: 100%;
+    max-height: 200px; /* Ajusta según necesites */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Formulario de contacto */
+.contact-section {
+    width: 100%;
+    max-width: 800px; /* Ajusta según necesites */
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-input, .contact-textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-submit {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4A7C59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background-color: #3e6647;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .gallery-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-section details, .contact-section {
+        width: 90%;
+    }
+}

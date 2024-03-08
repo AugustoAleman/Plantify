@@ -3,8 +3,8 @@ import dash_html_components as html
 from components import footer, navbar
 
 
-app = dash.Dash(__name__, title='Liverpool Human Analytics', use_pages = True)  # Set the title
-app.title = 'Liverpool Human Analytics'  # Alternate way to set the title
+app = dash.Dash(__name__, title='Plantify', use_pages = True)  # Set the title
+app.title = 'Plantify'  # Alternate way to set the title
 
 # Define the app layout
 app.layout = html.Div([

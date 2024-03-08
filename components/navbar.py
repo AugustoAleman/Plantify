@@ -4,7 +4,7 @@ import dash_html_components as html
 
 def navbar():
    navbar_component =  html.Div([
-    dcc.Link(html.Img(src='assets/src/liverpool-logo.png', className='logo'), href = '/'),  # Customize logo path
+    dcc.Link(html.Img(src='assets/src/plantify-logo.png', className='logo'), href = '/'),  # Customize logo path
 
     html.Div([
         html.Div([

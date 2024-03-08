@@ -8,7 +8,7 @@ def footer():
     footer_section = html.Div([
                     html.Div([
                         html.Div([
-                            html.H3('Liverpool Human Analytics', className='footer-name'),
+                            html.H3('Plantify', className='footer-name'),
                             html.A('Descubre las historias detrás de los datos, explorando la esencia de la experiencia humana. La analítica se encuentra con la emoción, y las decisiones se basan en la ciencia y la humanidad. Juntos, desentrañamos el misterio de lo que nos hace únicos.', className='footer-description'),
                         ], className='footer-description-container'),
 
@@ -34,7 +34,7 @@ def footer():
                             html.Div([
                                 html.H5('Soporte', className='footer-link-description'),
                                 html.H5('+52 (55)-55-55-55', className='footer-link-element'),
-                                html.H5('analytics@liverpool.mx', className='footer-link-element'),
+                                html.H5('soporte@plantify.mx', className='footer-link-element'),
                                 html.H5('Mario Pani 200, Lomas de Santa Fe, CDMX.', className='footer-link-element')
                             ], className='footer-link'),
 
@@ -42,7 +42,7 @@ def footer():
                     ], className='footer-superior'),
 
                     html.Div([
-                        html.Div([html.A('Copyright © 2023 - Todos los Derechos Reservados | Hecho por Augusto Alemán')], className = 'footer-copyright'),
+                        html.Div([html.A('Copyright © 2023 - Todos los Derechos Reservados')], className = 'footer-copyright'),
                         html.Div([
                             html.Div([
                                 html.Img(src='assets/src/1.png', className='footer-logo-image'),

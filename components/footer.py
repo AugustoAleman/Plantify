@@ -8,34 +8,34 @@ def footer():
     footer_section = html.Div([
                     html.Div([
                         html.Div([
-                            html.H3('Plantify', className='footer-name'),
-                            html.A('Descubre las historias detrás de los datos, explorando la esencia de la experiencia humana. La analítica se encuentra con la emoción, y las decisiones se basan en la ciencia y la humanidad. Juntos, desentrañamos el misterio de lo que nos hace únicos.', className='footer-description'),
+                            html.Div([html.Img(src='assets/src/plantify-logo-dark.png', className='footer-plantify-logo')], className=''),
+                            html.P('¡Bienvenido a Plantify, tu destino para la revolución verde! Somos pioneros en sistemas de cultivo aeropónico modular, comprometidos con la sostenibilidad al utilizar materiales reciclados en la construcción de nuestras unidades. Descubre la innovación y la frescura en cada cosecha con Plantify. Convierte tu espacio en un oasis verde con nosotros.', className='footer-description'),
                         ], className='footer-description-container'),
 
                         html.Div([
                             
                             html.Div([
-                                html.H5('Navegación', className='footer-link-description'),
-                                html.H5('Inicio', className='footer-link-element'),
-                                html.H5('Sobre Nosotros', className='footer-link-element'),
-                                html.H5('Servicios', className='footer-link-element'),
-                                html.H5('Atributos', className='footer-link-element')
+                                html.P('Navegación', className='footer-link-description'),
+                                html.P('Inicio', className='footer-link-element'),
+                                html.P('Sobre Nosotros', className='footer-link-element'),
+                                html.P('Servicios', className='footer-link-element'),
+                                html.P('Atributos', className='footer-link-element')
                             ], className='footer-link'),
 
                             html.Div([
-                                html.H5('Información', className='footer-link-description'),
-                                html.H5('Aviso legal', className='footer-link-element'),
-                                html.H5('Política de privacidad', className='footer-link-element'),
-                                html.H5('Centro de ayuda', className='footer-link-element'),
-                                html.H5('Preguntas frecuentes', className='footer-link-element')
+                                html.P('Información', className='footer-link-description'),
+                                html.P('Aviso legal', className='footer-link-element'),
+                                html.P('Política de privacidad', className='footer-link-element'),
+                                html.P('Centro de ayuda', className='footer-link-element'),
+                                html.P('Preguntas frecuentes', className='footer-link-element')
                             ], className='footer-link'),
 
                             
                             html.Div([
-                                html.H5('Soporte', className='footer-link-description'),
-                                html.H5('+52 (55)-55-55-55', className='footer-link-element'),
-                                html.H5('soporte@plantify.mx', className='footer-link-element'),
-                                html.H5('Mario Pani 200, Lomas de Santa Fe, CDMX.', className='footer-link-element')
+                                html.P('Soporte', className='footer-link-description'),
+                                html.P('+52 (55)-55-55-55', className='footer-link-element'),
+                                html.P('soporte@plantify.mx', className='footer-link-element'),
+                                html.P('Mario Pani 200, Lomas de Santa Fe, CDMX.', className='footer-link-element')
                             ], className='footer-link'),
 
                         ], className='footer-links')

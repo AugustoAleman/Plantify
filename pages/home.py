@@ -32,7 +32,8 @@ def findPort():
 
 
 def terminate():
-    sys.exit()
+    pass
+    # sys.exit()
 
 port = findPort()
 print("port:",port)
@@ -111,17 +112,22 @@ layout = html.Div([
             ], className='tower-description'),
 
             html.Div([
-                
-                daq.ToggleSwitch(id = "activarBomba", value = False, color = "green"),
-                # dcc.Interval(id='readSerial', interval=1),
-                daq.ToggleSwitch(id="automatic-switch", value=False, color="blue", label="Automatic Mode"),
                 dcc.Interval(id='interval-component', interval=1000, n_intervals=0),  # Update every second
+                dbc.Row([
+                    dbc.Col(html.P('Activar bomba', className='switch-buttons-text')),
+                    dbc.Col(daq.ToggleSwitch(id = "activarBomba", value = False)
+)
+                ], className = "switch-text-row"),
+                dbc.Row([
+                    dbc.Col(html.P('Modo Automático', className='switch-buttons-text')),
+                    dbc.Col(daq.ToggleSwitch(id="automatic-switch", value=False))
 
-                html.P(id = "outputState"), 
-                html.P(id = "outputState2"),
-
-                html.Div(html.Img(src='assets/src/on-off-button.png', className='on-off-image'), className='aero-image-container'),
-
+                ], className = "switch-text-row"),
+                dbc.Row([
+                    html.P(id = "outputState", hidden=True), 
+                    html.P(id = "outputState2", hidden=True)
+                ]),
+                
                 html.Div([
                     dcc.Link(html.Button(['Ver Detalles', html.Img(src='assets/src/arrow.png', className='arrow-image')],
                                          className='tower-rounded-button'), href='/', className='tower-rounded-button-container')

@@ -345,6 +345,21 @@
     color:azure;
 }
 
+.switch-text-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15rem;
+    margin-top: 0.5rem;
+
+}
+
+.switch-buttons-text {
+    color: azure;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
 .tower-description-top {
     font-size: 1.8rem;
     font-weight: normal;
@@ -421,6 +436,25 @@
 
 /* Media query for screens smaller than iPhone 12 Pro Max */
 @media only screen and (max-width: 435px) {
+    .switch-text-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 12rem;
+        margin-top: 1rem;
+
+    
+    }
+    
+    .switch-buttons-text {
+        color: azure;
+        font-weight: bolder;
+        font-size: 13px;
+        border-radius: 5px;
+        background-color: rgba(22, 21, 21, 0.545);
+        /* opacity: 0.2; */
+    }
+
     .aero-image-container{
         width: 0%;
         margin-left: 0rem;

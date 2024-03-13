@@ -1,5 +1,5 @@
 import dash
-import dash_html_components as html
+from dash import html, dcc
 from components import footer, navbar
 import dash_bootstrap_components as dbc
 

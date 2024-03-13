@@ -107,7 +107,7 @@ layout = html.Div([
                 html.Div([
                     html.H3('Torre'),
                     html.A('Planta Baja')
-                ], className='tower-description'),
+                ], className='tower-description-bottom'),
             ], className='tower-description'),
 
             html.Div([
